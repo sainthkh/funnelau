@@ -1,0 +1,79 @@
+#main-header {
+  background: #ffecb3;
+}
+
+.et_divi_builder #et_builder_outer_content .et_pb_module {
+  .hero-input-box {
+    padding: 3px;
+    background: white;
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+
+  input.hero-input-email {
+    height: 50px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  button.hero-input-submit:hover {
+    background: #bf360c;
+  }
+
+  .hero,
+  .hero-cta {
+    padding-top: 0;
+  }
+
+  @media (min-width: 600px) {
+    .hero,
+    .hero-cta {
+      padding-top: inherit;
+    }
+
+    .hero-input-box {
+      flex-wrap: nowrap;
+    }
+
+    button.hero-input-submit {
+      margin-left: auto;
+      width: 30%;
+    }
+  }
+}
+
+.cta-btn {
+  height: 50px;
+  width: 100%;
+  background: #e65100;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.et_divi_builder {
+  .writer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #et_builder_outer_content .et_pb_module .writer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+  }
+
+  .writer .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

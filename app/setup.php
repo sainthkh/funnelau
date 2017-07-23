@@ -16,11 +16,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }, 100);
 
-add_action('wp_print_styles', 'App\mytheme_dequeue_css_from_plugins', 100);
-function mytheme_dequeue_css_from_plugins()  {
-	wp_dequeue_style('et-builder-modules-style'); 
-}
-
 /**
  * Theme setup
  */
