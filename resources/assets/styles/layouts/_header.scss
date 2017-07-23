@@ -1,8 +1,5 @@
 // Header
-.banner .nav li {
-  @extend .nav-item;
-}
-
-.banner .nav a {
-  @extend .nav-link;
+.nav-link {
+  color: black;
+  font-weight: 400;
 }

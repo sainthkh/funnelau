@@ -48,6 +48,9 @@ add_action('after_setup_theme', function () {
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage')
     ]);
+    add_filter('wp_nav_menu_items', function($items, $args) {
+        return str_replace('<a', '<a class="nav-link"', $items);
+    }, 10, 2);
 
     /**
      * Enable post thumbnails
@@ -60,6 +63,12 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
      */
     add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+
+    add_theme_support( 'custom-logo', array(
+		'width'       => 250,
+		'height'      => 120,
+		'flex-width'  => true,
+	) );
 
     /**
      * Enable selective refresh for widgets in customizer
