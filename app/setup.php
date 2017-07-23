@@ -41,7 +41,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'funnelau'),
+        'frontpage_bottom_navigation' => __('Front Page Bottom Navigation', 'funnelau'),
     ]);
     add_filter('wp_nav_menu_items', function($items, $args) {
         return str_replace('<a', '<a class="nav-link"', $items);
