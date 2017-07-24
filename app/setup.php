@@ -42,6 +42,7 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'funnelau'),
+        'frontpage_top_navigation' => __('Front Page Top Navigation', 'funnelau'),
         'frontpage_bottom_navigation' => __('Front Page Bottom Navigation', 'funnelau'),
     ]);
     add_filter('wp_nav_menu_items', function($items, $args) {
