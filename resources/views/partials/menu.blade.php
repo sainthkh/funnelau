@@ -30,7 +30,7 @@
                     </div>
                 </li>
             @else
-                <li class="nav-item">
+                <li class="nav-item {{implode(' ', $menu->classes)}}">
                     <a class="nav-link" href="{{$menu->url}}">{{$menu->title}}</a>
                 </li>
             @endif
