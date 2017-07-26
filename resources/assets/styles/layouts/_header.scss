@@ -1,21 +1,24 @@
 // Header
-.nav-link {
-  color: black;
-  font-weight: 400;
-}
-
-.menu-cta {
-  background: #ff6e40;
-  border-radius: 8px;
-  margin-left: 15px;
-  padding: 0 15px;
-
-  &:hover {
-    background: #dd491a;
-  }
-
+.navbar-light .navbar-nav {
   .nav-link {
-    color: white;
-    font-weight: bold;
+    color: black;
+    font-weight: 400;
+  }
+
+  .menu-cta {
+    background: #ff6e40;
+    border-radius: 8px;
+    margin-left: 15px;
+    padding: 0 15px;
+
+    &:hover {
+      background: #dd491a;
+    }
+
+    .nav-link {
+      color: white;
+      font-weight: bold;
+    }
   }
 }
+
